@@ -137,17 +137,18 @@ reverseString('epicode');
 */
 
 function upperFirst(capi){
-         var upp = capi.split('');
-         //for (let i = 0; i < capi.length; i++) {
-            //capi[i] = capi[i][0].toUpperCase() + capi[i].substr(1);
-        //}
-            //capi.join(' ');
-            console.log(upp);
+         var upp = capi.split(" ");
+         var upp1;
+         for (let i = 0; i < upp.length; i++) {
+            upp[i] = upp[i].charAt(0).toUpperCase() + upp[i].slice(1);;
+        }
+            upp1 = upp.join(' ');
+            console.log(upp1);
       }
     
 
     upperFirst('tutte le iniziali devono essere maiuscole');
-
+    
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
