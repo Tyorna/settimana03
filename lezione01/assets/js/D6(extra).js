@@ -5,15 +5,82 @@
  se il suo valore è maggiore di 5 o no.
  La funzione deve inoltre ritornare la somma di tutti i valori maggiori di 5.
 */
+function giveMeRandom(rand){
+    var rnum =[];
+    //= Math.floor(Math.random()*11);
+    for (b = 0; b<rand; b++) {
+        rnum.push(Math.floor(Math.random()*11));
+    }
+    console.log(rnum);
+ }
+ 
+ 
+ giveMeRandom(5);
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*function checkArray(che){
+    var sum= [];
+    for (a = 0; a<che; a++) {
+        if (che[a] > 5) {
+            console.log('maggiore di 5');
+            sum += che[a];
+        } else {
+            console.log('minore di 5');
+        }
+    }
+    console.log(sum);
+ }
+ 
+ 
+ checkArray(rnum);
+ */
+ 
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "shoppingCartTotal" che calcola il totale dovuto al negozio (tenendo conto delle quantità di ogni oggetto).
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+var shoppingCart = [
+    {
+        price : 28,
+        name : 'vino',
+        id : 1,
+        quantity : 1,
+    },
+    {
+        price : 1,
+        name : 'pane',
+        id : 2,
+        quantity : 5,
+    },
+    {
+        price : 7,
+        name : 'fragole',
+        id : 3,
+        quantity : 5,
+    },
+    {
+        price : 2,
+        name : 'acqua',
+        id : 4,
+        quantity : 6,
+    }];
+
+
+
+
+function shoppingCartTotal(shippingCart){
+    var index = 0;
+    var tot = 0;
+    while (index < shoppingCart.length){
+        const summ = shoppingCart[index];
+        tot += parseInt(summ.price);
+        index++;
+      }
+      console.log(tot);
+}
+
+shoppingCartTotal(shoppingCart);
 
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
