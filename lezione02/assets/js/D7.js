@@ -17,13 +17,14 @@ var nuovastr1 =  (str1.slice(0,2)).concat(str2.slice(str2.length-3, str2.length)
 console.log(nuovastr1)
 
 // funzione;
-/*str3 = ['alpe','marittimo'];
+
 function str3(s3,s4){
    var str4 = (s3.slice(0,2)).concat(s4.slice(s4.length-3, s4.length)).toUpperCase();
+   return str4;
    
 }
 
-console.log(str4);*/
+console.log(str3("locandina","animale"));
 
 /* ESERCIZIO 2
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
@@ -296,14 +297,16 @@ console.log(film);
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
-/*var totfilm = 0;
+var totfilm = 0;
 var totfilm2 = 0;
 for (let i = 0; i < movies.length; i++) {
-    totfilm += movies[i].Title; 
-    totfilm2 += movies[i];
+    totfilm += movies[i].Title; }
+    for (n = 0; n < totfilm; n++){
+      totfilm2 += [n];
+    
     }
 
-    console.log(totfilm2);*/
+    console.log(totfilm2);
 
 /* ESERCIZIO 12
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
