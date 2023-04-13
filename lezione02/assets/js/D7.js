@@ -54,15 +54,23 @@ rand(10);
 */
 
 
-function pari (num){
-  var pari2;
+/*function pari (...num){
+  var pari2 = [];
   if(num % 2 == 0){
     pari2.push(num);
-    console.log(pari2);
+    return pari2;
   }
 }
+console.log(pari(10, 5 ,6, 8, 7, 3));*/
 
- pari[10, 5 ,6, 8, 7, 3];
+/*var pari2 = pari.filter(pdue)[];
+
+function pari (...num){
+  
+  
+}
+console.log(pari(10, 5 ,6, 8, 7, 3));*/
+ 
  
 /*function pdue (...due){
   return due % 2 == 0;
@@ -95,14 +103,14 @@ console.log(con);*/
 /* ESERCIZIO 5
   Scrivi una funzione per sommare i numeri contenuti in un array (usare REDUCE)
 */
- var arr = [2, 4, 5, 7, 9, 10];
+ /*var arr = [2, 4, 5, 7, 9, 10];
  var totale = arr.reduce(red);
 
 function red(tot, valore){
   return tot + valore;
   }
 
-console.log(totale);
+console.log(totale);*/
 
 /* ESERCIZIO 6
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
@@ -148,7 +156,7 @@ function dispari(){
   }
 }
 
-console.log(dispar);*/
+console.log(dispari());*/
 
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
